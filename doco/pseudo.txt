@@ -65,3 +65,4 @@ Create an ATM Machine
 // what accountType
         // loads users from files
                 // use comma as separator
+MAIN - // loads data and function from ATM
