@@ -4,7 +4,10 @@ public class UserTest {
 
     @Test
     public void createAccount(){
-//        User user =
+        Account account = new Account (100 ,1 , "2345", AccountType.SAVING);
+        Account account1 = new Account (112233 ,2 , "23456", AccountType.CHEQUE);
+        Account account3 = new Account (12 ,3 , "12345245", AccountType.SAVING);
+
     }
 
     @Test
