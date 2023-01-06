@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public enum AccountType {
+public enum AccountType {
+    CHEQUE,
+    SAVING
 }
