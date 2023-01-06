@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
 
         ATM atm = new ATM();
-        atm.loadUsers("users.txt");
+        atm.loadUsers("data/users.txt");
 //        System.out.println(atm.loadUsers("users.txt"));
-        atm.loadAccounts("accounts.txt");
+        atm.loadAccounts("data/accounts.txt");
 
         atm.interactATM();
 

@@ -1,0 +1,67 @@
+Create an ATM Machine
+// better to use a user class and a enum to use object orienteering approach.
+/* - User Class
+    // user needs to have id, name, balance saving, balance checking, mobile.
+    // Declare variables for users first and last name, their different accounts,
+//    their mobile numbers and their account numbers
+   // private int id;
+
+    // Constructor function to initialize a new User object
+    // public user (parameters) { this.firstname = firstname}
+//function to get ID
+//    function to get id
+// getID {this.id = id}
+    //function to get lastName
+//function to change saving balance
+    //function to change checking balance
+    // public void setbalance (double balance ) { balance.setbalance(balance)}
+    // Function that gets the savings account
+// Function that gets the checking account
+// function to get mobile number
+    // functions that get the savings and checking account numbers
+    //functions to change the savings and checking account
+    // function to change the mobile number
+//function to change id
+    // function to change cheque and savings account number
+// initialize a new account
+// constructor function to initialize a new account
+// returns balance of account
+
+
+/* - Account class - very simple getters and setters
+    //Declare variables that are a part of users accounts
+// function that gets the id from the account
+// function that returns the id from the account
+// function that retrieves the account number
+// function that retrieves the mobile number
+// function that enables you to change the balance // public void setbalance (double balance ) { balance.setbalance(balance)}
+// function that enables you to change or declare the account number
+// function that enables you to change or declare the id
+
+
+/* - ATM
+// creates a hashmap of users and their id
+    // is the main function that governs the code base - the ATM function is run out of this
+    // checks if the function is still progressing and runs code accordingly using a while (true) loop
+    // asks user for their account number - sout("account number?")
+  // checks if the code is still progressing - also checks if the user use q and returns balance afterwards
+// finds what user they are and makes them the current user
+// welcomes user and asks what they want to do
+         // asks user what option they want to do
+// Function that controls what happens after user selects what to do
+                  // 1 - deposit
+                  // 2 - Withdram
+                  // 3 - balance
+                  // 4 - quit
+                  // use if and if else
+// add in deposit
+// is the withdraw function - needs to check for amount of money in account
+                // prompt them to enter the amount to withdrawm
+                // ensure they have enough money
+                // for checking account
+                // withdraw from account
+ //loads accounts from files
+ // use three pipes as separator
+// what accountType
+        // loads users from files
+                // use comma as separator

@@ -11,17 +11,19 @@ import java.util.Scanner;
 
 public class ATM {
 
-//map for
+//map for users and their id
 
     Map<Integer, User> users;
-
+// creates a hashmap of users and their id
     public ATM() {
         users = new HashMap<>();
     }
 
+    // is the main function that governs the code base - the ATM function is run out of this
     public void interactATM() {
         Scanner scanner = new Scanner(System.in);
 
+ // checks if the function is still progressing and runs code accordingly using a while (true) loop
 
         boolean alive = true;
         boolean dead = false;
@@ -32,8 +34,10 @@ public class ATM {
 
 
             System.out.println("Please Enter you User ID");
-            // asks user for their account number
+//                  sout("account number?")
+                  // asks user for their account number
             int id;
+            // checks if the code is still progressing - also checks if the user use q
             try {
                 id = scanner.nextInt();
             } catch (InputMismatchException e) {
@@ -53,7 +57,7 @@ public class ATM {
             }
             // welcomes user and asks what they want to do
             System.out.println("Welcome " + user.getFirstname() + " " + user.getLastname() + "!");
-            // step 2
+         // asks user what option they want to do
             System.out.println("Select an option: 1) Deposit 2) Withdraw 3) Balance 4) Quit");
             int option;
             try {
@@ -68,19 +72,24 @@ public class ATM {
 
             }
 
-            String optionToQuit = scanner.nextLine();  // consume the newline character
-            if (option == 4) {
-                System.out.println("Account balances:");
-                System.out.println("Savings: " + user.getSavingsAccount().getBalance());
-                System.out.println("Checking: " + user.getCheckingAccount().getBalance());
-            }
+//            String optionToQuit = scanner.nextLine();  // consume the newline character
+//            if (option == 4) {
+//                System.out.println("Account balances:");
+//                System.out.println("Savings: " + user.getSavingsAccount().getBalance());
+//                System.out.println("Checking: " + user.getCheckingAccount().getBalance());
+//            }
 
 
 //            System.out.println(user.getCheckingAccount().getBalance());
 //            System.out.println("Select an account: 1) Checking: " + user.getCheckingAccount().getAccountNumber() + " 2) Savings: " + user.getSavingsAccount().getAccountNumber());
 //            int accountType = scanner.nextInt();
 //            scanner.nextLine();
-
+// Function that controls what happens after user selects what to do
+                  // 1 - deposit
+                  // 2 - Withdram
+                  // 3 - balance
+                  // 4 - quit
+                  // use if and if else
             if (option == 1) {
                 System.out.println("Select an account: 1) Checking: " + user.getCheckingAccount().getAccountNumber() + " 2) Savings: " + user.getSavingsAccount().getAccountNumber());
                 int accountType = scanner.nextInt();
@@ -98,7 +107,7 @@ public class ATM {
                     user.getCheckingAccount().setBalance(balance);
                 }
 
-
+// is the withdraw function - needs to check for amount of money in account
             } else if (option == 2) {
                 System.out.println("Select an account: 1) Checking: " + user.getCheckingAccount().getAccountNumber() + " 2) Savings: " + user.getSavingsAccount().getAccountNumber());
                 int accountType = scanner.nextInt();
@@ -181,7 +190,7 @@ public class ATM {
                 System.out.println(values[3]);
                 double accountBalance = Double.parseDouble(values[3]);
                 User currentUser = users.get(id);
-//                if accountType
+//                what accountType
                 if (accountType.equals("Saving")) {
                     currentUser.createAccount(AccountType.SAVING, accountBalance, id, accountNumber);
                 } else if(accountType.equals("Cheque")) {
