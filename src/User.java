@@ -103,9 +103,4 @@ public class User {
     }
 
 
-//    User user001 = new User(001, "John Smith", "0403715629", 500.90, "9264945", 200.90, "7184135" );
-//    User user002 = new User(002, "Leanne Smith", "0403185031", 1200, "9676422", 50.0 , "7524155");
-//    User user003 = new User(003, "Kim Kash", "0404993021", 4000.20, "9042221", 0, "" );
-
-
 }

@@ -162,7 +162,6 @@ public class ATM {
 
 
     public boolean loadAccounts(String fileName) {
-        System.out.println("balls is here "+fileName);
         Path current = Paths.get(".");
         System.out.println(current.toAbsolutePath());
         if (users.size() == 0) {
@@ -175,7 +174,6 @@ public class ATM {
                 // use three pipes as separator
                 System.out.println(line);
                 String[] values = line.split("\\|\\|\\|");
-                System.out.println("values"+values);
                 int id = Integer.parseInt(values[0]);
                 String accountNumber = values[1];
                 String accountType = values[2];
@@ -199,8 +197,6 @@ public class ATM {
 
     public boolean loadUsers(String fileName) {
         String line = "";
-        System.out.println("fuck ya");
-        System.out.println(fileName + " fileName");
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             while ((line = br.readLine()) != null) {
                 // use comma as separator
@@ -210,7 +206,6 @@ public class ATM {
                     id = Integer.parseInt(values[3]);
                     System.out.println(id + "id");
                     User user = new User(values[0], values[1], values[2], id);
-                    System.out.println(values + "values");
                     users.put(id, user);
                 }
             }
