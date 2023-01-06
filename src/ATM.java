@@ -162,6 +162,7 @@ public class ATM {
 
 
     public boolean loadAccounts(String fileName) {
+        //loads accounts from files
         Path current = Paths.get(".");
         System.out.println(current.toAbsolutePath());
         if (users.size() == 0) {
@@ -196,6 +197,7 @@ public class ATM {
     }
 
     public boolean loadUsers(String fileName) {
+        // loads users from files
         String line = "";
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             while ((line = br.readLine()) != null) {
