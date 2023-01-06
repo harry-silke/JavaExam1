@@ -18,7 +18,7 @@ class ATMTest {
 
 
         assertTrue(atm.users.get(002).getID()==002);
-
+        
 
         assertTrue(atm.users.get(003).getID()==003);
 
